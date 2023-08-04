@@ -79,7 +79,7 @@ function randomPizza() {
     const randomToppings = [];
     const numToppings = Math.floor(Math.random() * (toppings.length + 1)); // Random number of toppings (0 to all)
 
-    for (let i = 0; i < numToppings; i++) {
+    for (var i = 0; i < numToppings; i++) {
         const randomTopping = toppings[Math.floor(Math.random() * toppings.length)];
         randomToppings.push(randomTopping);
     }
